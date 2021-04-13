@@ -234,6 +234,8 @@ PODS:
     - React-cxxreact (= 0.63.23)
     - React-jsi (= 0.63.23)
   - React-jsinspector (0.63.23)
+  - react-native-webview (11.3.2):
+    - React-Core
   - React-RCTActionSheet (0.63.23):
     - React-Core/RCTActionSheetHeaders (= 0.63.23)
   - React-RCTAnimation (0.63.23):
@@ -336,6 +338,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native-macos/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native-macos/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native-macos/ReactCommon/jsinspector`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React-RCTActionSheet (from `../node_modules/react-native-macos/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native-macos/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native-macos/Libraries/Blob`)
@@ -395,6 +398,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-macos/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native-macos/ReactCommon/jsinspector"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-RCTActionSheet:
     :path: "../node_modules/react-native-macos/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -445,6 +450,7 @@ SPEC CHECKSUMS:
   React-jsi: d94c378d2f53c4161d18e6faa2332d983b16bfd5
   React-jsiexecutor: ecdf4db28766cd5e6cf7224affc40906fe384d4e
   React-jsinspector: c3e7f191acbd5ec43b9e7605b28c2a72be903154
+  react-native-webview: 71567b6bf3d4e55914e580d720cc8f7df64af817
   React-RCTActionSheet: f08f247739d22c4761782c6f64694d705bae1a38
   React-RCTAnimation: 91475020d5b286feeb26a2b8417698699b124695
   React-RCTBlob: bd57a242e2b9f9189b2b8883c8f3b265bb3a7769

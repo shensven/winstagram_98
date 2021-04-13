@@ -12,6 +12,8 @@ target 'winstagram_98' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
   target 'winstagram_98Tests' do
     inherit! :complete
     # Pods for testing
