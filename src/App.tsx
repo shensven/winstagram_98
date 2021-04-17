@@ -5,7 +5,7 @@ const Hello = () => {
   return <div>Hello World</div>;
 };
 
-export default function App() {
+const App = () => {
   return (
     <Router>
       <Switch>
@@ -13,4 +13,6 @@ export default function App() {
       </Switch>
     </Router>
   );
-}
+};
+
+export default App;
