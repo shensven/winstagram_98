@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const Hello = () => {
-  return <div>Hello World 2</div>;
+  return <div>Hello World 3</div>;
 };
 
 const App = () => {
