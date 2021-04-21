@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Profile.modules.scss';
+import styles from './Profile.module.scss';
 import title_help from './icons/help.svg';
 
-const Profile = () => {
+const Profile: React.FC = () => {
   return (
     <div className={styles.bg}>
       <div className={styles.firstMarginTop} />
