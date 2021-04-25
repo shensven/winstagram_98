@@ -11,6 +11,7 @@ declare namespace ProfileModuleScssNamespace {
     main_divider: string;
     main_username: string;
     mian_avatar_pic: string;
+    mian_base_info: string;
     mian_base_info_folowers: string;
     mian_base_info_folowers_num: string;
     mian_base_info_folowers_title: string;

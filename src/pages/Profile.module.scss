@@ -113,7 +113,7 @@ body {
 .main_base_info_data {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .main_avatar {
@@ -127,6 +127,9 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 45px;
+}
+.mian_base_info {
+  display: flex;
 }
 .mian_base_info_post,
 .mian_base_info_folowers,

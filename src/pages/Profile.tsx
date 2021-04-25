@@ -24,20 +24,24 @@ const Profile: React.FC = () => {
           <div className={styles.main_avatar}>
             <img alt="" src={avatar} className={styles.mian_avatar_pic} />
           </div>
-          <span className={styles.mian_base_info_post}>
-            <div className={styles.mian_base_info_post_num}>334</div>
-            <div className={styles.mian_base_info_post_title}> posts</div>
-          </span>
-          <span className={styles.mian_base_info_folowers}>
-            <div className={styles.mian_base_info_folowers_num}>221K</div>
-            <div className={styles.mian_base_info_folowers_title}>folowers</div>
-          </span>
-          <span className={styles.mian_base_info_folowing}>
-            <div className={styles.mian_base_info_folowing_num}>134</div>
-            <div className={styles.mian_base_info_folowing_title}>
-              foloweing
-            </div>
-          </span>
+          <div className={styles.mian_base_info}>
+            <span className={styles.mian_base_info_post}>
+              <div className={styles.mian_base_info_post_num}>334</div>
+              <div className={styles.mian_base_info_post_title}> posts</div>
+            </span>
+            <span className={styles.mian_base_info_folowers}>
+              <div className={styles.mian_base_info_folowers_num}>221K</div>
+              <div className={styles.mian_base_info_folowers_title}>
+                folowers
+              </div>
+            </span>
+            <span className={styles.mian_base_info_folowing}>
+              <div className={styles.mian_base_info_folowing_num}>134</div>
+              <div className={styles.mian_base_info_folowing_title}>
+                foloweing
+              </div>
+            </span>
+          </div>
         </div>
         <div className={styles.main_base_info_nickname}>GenSven</div>
         <div className={styles.main_base_info_bio}>Frontend Developer</div>
