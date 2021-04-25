@@ -7,6 +7,8 @@ declare namespace ProfileModuleScssNamespace {
     titlebar_btn: string;
     titlebar_svg: string;
     titlebar_title: string;
+    titlebar_title_logo: string;
+    titlebar_title_typo: string;
   }
 }
 

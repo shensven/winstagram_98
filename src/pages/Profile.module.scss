@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Pixelated MS Sans Serif';
+  font-family: 'MS_Sans_serif';
   font-weight: normal;
   font-style: normal;
-  src: url('./fonts/converted/ms_sans_serif.woff2') format(woff2);
+  src: url('./fonts/converted/ms_sans_serif.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Pixelated MS Sans Serif';
+  font-family: 'MS_Sans_Serif_Bold';
   font-weight: bold;
   font-style: normal;
-  src: url('./fonts/converted/ms_sans_serif_bold.woff2') format(woff2);
+  src: url('./fonts/converted/ms_sans_serif_bold.woff2') format('woff2');
 }
 
 $global_shadow: (
@@ -57,9 +57,20 @@ body {
 }
 .titlebar_title {
   color: #ffffff;
-  font-family: 'Pixelated MS Sans Serif';
-  font-size: 12px;
-  font-weight: 700;
+  font-family: 'MS_Sans_Serif_Bold';
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+.titlebar_title_logo {
+  width: 15px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.titlebar_title_typo {
+  padding-left: 1px;
+  padding-right: 1px;
+  white-space: nowrap;
 }
 .titlebar_btn {
   border: none;
