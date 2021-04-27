@@ -1,6 +1,8 @@
 declare namespace ProfileModuleScssNamespace {
   export interface IProfileModuleScss {
     bg: string;
+    edit_profile_btn: string;
+    edit_profile_wing: string;
     first_margin_top: string;
     header: string;
     header_avatar: string;
@@ -21,6 +23,8 @@ declare namespace ProfileModuleScssNamespace {
     header_stats_post_title: string;
     header_username: string;
     header_website: string;
+    header_wing: string;
+    init_btn: string;
     titlebar: string;
     titlebar_btn: string;
     titlebar_svg: string;
