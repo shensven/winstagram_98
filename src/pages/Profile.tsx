@@ -7,7 +7,7 @@ import avatar from './images/avatar.jpg';
 const Profile: React.FC = () => {
   return (
     <div className={styles.bg}>
-      <div className={styles.firstMarginTop} />
+      <div className={styles.first_margin_top} />
       <div className={styles.titlebar}>
         <div className={styles.titlebar_title}>
           <img alt="" src={logo} className={styles.titlebar_title_logo} />
@@ -17,36 +17,34 @@ const Profile: React.FC = () => {
           <img alt="" src={title_help} className={styles.titlebar_svg} />
         </button>
       </div>
-      <div className={styles.main}>
-        <div className={styles.main_username}>shensven</div>
-        <div className={styles.main_divider} />
-        <div className={styles.main_base_info_data}>
-          <div className={styles.main_avatar}>
-            <img alt="" src={avatar} className={styles.mian_avatar_pic} />
+      <div className={styles.header}>
+        <div className={styles.header_username}>shensven</div>
+        <div className={styles.header_divider} />
+        <div className={styles.header_base_info}>
+          <div className={styles.header_avatar}>
+            <img alt="" src={avatar} className={styles.header_avatar_img} />
           </div>
-          <div className={styles.mian_base_info}>
-            <span className={styles.mian_base_info_post}>
-              <div className={styles.mian_base_info_post_num}>334</div>
-              <div className={styles.mian_base_info_post_title}> posts</div>
+          <div className={styles.header_stats}>
+            <span className={styles.header_stats_post}>
+              <div className={styles.header_stats_post_num}>334</div>
+              <div className={styles.header_stats_post_title}> posts</div>
             </span>
-            <span className={styles.mian_base_info_folowers}>
-              <div className={styles.mian_base_info_folowers_num}>221K</div>
-              <div className={styles.mian_base_info_folowers_title}>
-                folowers
-              </div>
+            <span className={styles.header_stats_folowers}>
+              <div className={styles.header_stats_folowers_num}>221K</div>
+              <div className={styles.header_stats_folowers_title}>folowers</div>
             </span>
-            <span className={styles.mian_base_info_folowing}>
-              <div className={styles.mian_base_info_folowing_num}>134</div>
-              <div className={styles.mian_base_info_folowing_title}>
+            <span className={styles.header_stats_folowing}>
+              <div className={styles.header_stats_folowing_num}>134</div>
+              <div className={styles.header_stats_folowing_title}>
                 foloweing
               </div>
             </span>
           </div>
         </div>
-        <div className={styles.main_base_info_nickname}>GenSven</div>
-        <div className={styles.main_base_info_bio}>Frontend Developer</div>
-        <div className={styles.main_base_info_website}>blog.shensven.com</div>
-        <div className={styles.main_divider} />
+        <div className={styles.header_name}>GenSven</div>
+        <div className={styles.header_bio}>Frontend Developer</div>
+        <div className={styles.header_website}>blog.shensven.com</div>
+        <div className={styles.header_divider} />
       </div>
       <div style={{ marginTop: '10px' }}>React</div>
       <button type="button">BTN</button>

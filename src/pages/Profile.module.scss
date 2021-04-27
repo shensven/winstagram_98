@@ -39,7 +39,7 @@ body {
   margin-top: 2px;
   box-shadow: $global_shadow;
 }
-.firstMarginTop {
+.first_margin_top {
   height: 1px;
 }
 .titlebar {
@@ -92,11 +92,11 @@ body {
 .titlebar_svg {
   width: 6px;
 }
-.main {
+.header {
   margin-left: 1px;
   margin-right: 1px;
 }
-.main_username {
+.header_username {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -104,36 +104,36 @@ body {
   font-family: 'MS_Sans_Serif_Bold';
   font-size: 13px;
 }
-.main_divider {
+.header_divider {
   width: 100%;
   height: 1px;
   background: #808080;
   box-shadow: 0 0.5px 0 0px #ffffff;
 }
-.main_base_info_data {
+.header_base_info {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main_avatar {
+.header_avatar {
   margin: 10px;
   width: 90px;
   height: 90px;
   border-radius: 45px;
   background: #808080;
 }
-.mian_avatar_pic {
+.header_avatar_img {
   width: 90px;
   height: 90px;
   border-radius: 45px;
 }
-.mian_base_info {
+.header_stats {
   display: flex;
 }
-.mian_base_info_post,
-.mian_base_info_folowers,
-.mian_base_info_folowing {
+.header_stats_post,
+.header_stats_folowers,
+.header_stats_folowing {
   margin-left: 20px;
   margin-right: 20px;
   display: flex;
@@ -141,29 +141,29 @@ body {
   justify-content: center;
   align-items: center;
 }
-.mian_base_info_post_num,
-.mian_base_info_folowers_num,
-.mian_base_info_folowing_num {
+.header_stats_post_num,
+.header_stats_folowers_num,
+.header_stats_folowing_num {
   font-family: 'MS_Sans_Serif_Bold';
   font-size: 13px;
 }
-.mian_base_info_post_title,
-.mian_base_info_folowers_title,
-.mian_base_info_folowing_title {
+.header_stats_post_title,
+.header_stats_folowers_title,
+.header_stats_folowing_title {
   font-family: 'MS_Sans_Serif';
   font-size: 11px;
 }
-.main_base_info_nickname {
+.header_name {
   margin: 10px;
   font-family: 'MS_Sans_Serif_Bold';
   font-size: 13px;
 }
-.main_base_info_bio {
+.header_bio {
   margin-left: 10px;
   font-family: 'MS_Sans_Serif';
   font-size: 13px;
 }
-.main_base_info_website {
+.header_website {
   margin-left: 10px;
   margin-bottom: 10px;
   font-family: 'MS_Sans_Serif';
