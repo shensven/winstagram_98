@@ -25,6 +25,7 @@ declare namespace ProfileModuleScssNamespace {
     header_website: string;
     header_wing: string;
     init_btn: string;
+    init_btn_ctrl: string;
     titlebar: string;
     titlebar_btn: string;
     titlebar_svg: string;

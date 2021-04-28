@@ -10,6 +10,7 @@
   font-style: normal;
   src: url('./fonts/converted/ms_sans_serif_bold.woff2') format('woff2');
 }
+
 $global_shadow: (
   -0.5px -0.5px 0 0.5px #dfdfdf,
   0 0 0 1px #808080,
@@ -22,6 +23,8 @@ $global_shadow_active: (
   -0.5px -0.5px 0 1.5px #0a0a0a,
   0 0 0 2px #ffffff
 );
+
+// button
 .init_btn {
   border: none;
   box-shadow: $global_shadow;
@@ -30,11 +33,25 @@ $global_shadow_active: (
 }
 .init_btn:active {
   box-shadow: $global_shadow_active;
+  padding-top: 2px;
+  padding-bottom: 0;
+  padding-left: 2px;
+  padding-right: 0;
 }
 .init_btn:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -2px;
+}
+// ctrl button
+.init_btn_ctrl:active {
+  box-shadow: $global_shadow_active;
+  padding: 0;
+}
+.init_btn_ctrl:focus {
   outline: 0;
 }
 
+// body
 body {
   margin: 0;
   background: #02a6a6;
@@ -91,10 +108,10 @@ body {
   align-items: center;
 }
 .titlebar_btn:active {
-  @extend .init_btn:active;
+  @extend .init_btn_ctrl:active;
 }
 .titlebar_btn:focus {
-  @extend .init_btn:focus;
+  @extend .init_btn_ctrl:focus;
 }
 .titlebar_svg {
   width: 6px;
