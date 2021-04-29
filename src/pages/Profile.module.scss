@@ -27,16 +27,18 @@ $global_shadow_active: (
 // button
 .init_btn {
   border: none;
+  height: 19px;
   box-shadow: $global_shadow;
   background: #c0c0c0;
   font-family: 'MS_Sans_Serif';
+  margin: 2px;
 }
 .init_btn:active {
   box-shadow: $global_shadow_active;
   padding-top: 2px;
-  padding-bottom: 0;
+  padding-right: 0px;
+  padding-bottom: 0px;
   padding-left: 2px;
-  padding-right: 0;
 }
 .init_btn:focus {
   outline: 1px dotted #000000;
@@ -45,7 +47,6 @@ $global_shadow_active: (
 // ctrl button
 .init_btn_ctrl:active {
   box-shadow: $global_shadow_active;
-  padding: 0;
 }
 .init_btn_ctrl:focus {
   outline: 0;
@@ -58,6 +59,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-font-smoothing: none;
 }
 .bg {
   background: #c0c0c0;
@@ -116,6 +118,8 @@ body {
 .titlebar_svg {
   width: 6px;
 }
+
+// header
 .header {
   margin-left: 1px;
   margin-right: 1px;
@@ -133,6 +137,7 @@ body {
   height: 1px;
   background: #808080;
   box-shadow: 0 0.5px 0 0px #ffffff;
+  margin-bottom: 1px;
 }
 .header_wing {
   margin-left: 10px;
@@ -193,12 +198,6 @@ body {
   margin-bottom: 10px;
   font-size: 13px;
 }
-.edit_profile_btn:active {
-  @extend .init_btn:active;
-}
-.edit_profile_btn:focus {
-  @extend .init_btn:focus;
-}
 
 .header_name {
   margin-top: 10px;
@@ -214,4 +213,67 @@ body {
   margin-bottom: 10px;
   font-family: 'MS_Sans_Serif';
   font-size: 13px;
+}
+
+// tabs
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.tab_item {
+  @extend .init_btn;
+  min-width: 84px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+// grid & nav
+.mix_navgrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 273px);
+}
+
+// grid
+.grid {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background: #dfdfdf;
+  box-shadow: $global_shadow_active;
+  overflow-y: scroll;
+}
+.img {
+  margin: 1px;
+  width: calc(33.3% - 2px);
+  height: 109px;
+  background: red;
+  display: flex;
+}
+
+// nav
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.nav_item {
+  @extend .init_btn;
+  min-width: 84px;
+  margin-left: 2px;
+  margin-right: 2px;
 }

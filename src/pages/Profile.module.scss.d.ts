@@ -4,6 +4,7 @@ declare namespace ProfileModuleScssNamespace {
     edit_profile_btn: string;
     edit_profile_wing: string;
     first_margin_top: string;
+    grid: string;
     header: string;
     header_avatar: string;
     header_avatar_img: string;
@@ -24,8 +25,14 @@ declare namespace ProfileModuleScssNamespace {
     header_username: string;
     header_website: string;
     header_wing: string;
+    img: string;
     init_btn: string;
     init_btn_ctrl: string;
+    mix_navgrid: string;
+    nav: string;
+    nav_item: string;
+    tab_item: string;
+    tabs: string;
     titlebar: string;
     titlebar_btn: string;
     titlebar_svg: string;

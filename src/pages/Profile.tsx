@@ -8,6 +8,8 @@ const Profile: React.FC = () => {
   return (
     <div className={styles.bg}>
       <div className={styles.first_margin_top} />
+
+      {/* title bar */}
       <div className={styles.titlebar}>
         <div className={styles.titlebar_title}>
           <img alt="" src={logo} className={styles.titlebar_title_logo} />
@@ -17,10 +19,11 @@ const Profile: React.FC = () => {
           <img alt="" src={title_help} className={styles.titlebar_svg} />
         </button>
       </div>
+
+      {/* header */}
       <div className={styles.header}>
         <div className={styles.header_username}>shensven</div>
         <div className={styles.header_divider} />
-
         <div className={styles.header_wing}>
           <div className={styles.header_base_info}>
             <div className={styles.header_avatar}>
@@ -56,11 +59,57 @@ const Profile: React.FC = () => {
           <div className={styles.header_bio}>Frontend Developer</div>
           <div className={styles.header_website}>blog.shensven.com</div>
         </div>
-
         <div className={styles.header_divider} />
       </div>
-      <div style={{ marginTop: '10px' }}>React</div>
-      <button type="button">BTN</button>
+
+      {/* tab */}
+      <div className={styles.tabs}>
+        <button type="button" className={styles.tab_item}>
+          tab a
+        </button>
+        <button type="button" className={styles.tab_item}>
+          tab b
+        </button>
+        <button type="button" className={styles.tab_item}>
+          tab c
+        </button>
+        <button type="button" className={styles.tab_item}>
+          tab d
+        </button>
+      </div>
+
+      {/* nav & grid */}
+      <div className={styles.mix_navgrid}>
+        {/* grid */}
+        <div className={styles.grid}>
+          <div className={styles.img}>1</div>
+          <div className={styles.img}>2</div>
+          <div className={styles.img}>3</div>
+          <div className={styles.img}>4</div>
+          <div className={styles.img}>5</div>
+          <div className={styles.img}>6</div>
+          <div className={styles.img}>7</div>
+          <div className={styles.img}>8</div>
+          <div className={styles.img}>9</div>
+          <div className={styles.img}>10</div>
+          <div className={styles.img}>11</div>
+        </div>
+        {/* nav */}
+        <div className={styles.nav}>
+          <button type="button" className={styles.nav_item}>
+            nav a
+          </button>
+          <button type="button" className={styles.nav_item}>
+            nav b
+          </button>
+          <button type="button" className={styles.nav_item}>
+            nav c
+          </button>
+          <button type="button" className={styles.nav_item}>
+            nav d
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
