@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'MS_Sans_Serif';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./fonts/converted/ms_sans_serif.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'MS_Sans_Serif_Bold';
+  font-weight: bold;
+  font-style: normal;
+  src: url('./fonts/converted/ms_sans_serif_bold.woff2') format('woff2');
+}
+
+$global_shadow: (
+  -0.5px -0.5px 0 0.5px #dfdfdf,
+  0 0 0 1px #808080,
+  -0.5px -0.5px 0 1.5px #ffffff,
+  0 0 0 2px #0a0a0a
+);
+$global_shadow_active: (
+  -0.5px -0.5px 0 0.5px #808080,
+  0 0 0 1px #dfdfdf,
+  -0.5px -0.5px 0 1.5px #0a0a0a,
+  0 0 0 2px #ffffff
+);
+
+// button
+.init_btn {
+  border: none;
+  height: 19px;
+  box-shadow: $global_shadow;
+  background: #c0c0c0;
+  font-family: 'MS_Sans_Serif';
+  margin: 2px;
+}
+.init_btn:active {
+  box-shadow: $global_shadow_active;
+  padding-top: 2px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+}
+.init_btn:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -2px;
+}
+
+// nav
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.nav_item {
+  @extend .init_btn;
+  min-width: 84px;
+  margin-left: 2px;
+  margin-right: 2px;
+}

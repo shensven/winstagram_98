@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from './Nav';
 import styles from './Profile.module.scss';
 import title_help from './icons/help.svg';
 import logo from './icons/glyph-logo_May2016.svg';
@@ -95,20 +96,7 @@ const Profile: React.FC = () => {
           <div className={styles.img}>11</div>
         </div>
         {/* nav */}
-        <div className={styles.nav}>
-          <button type="button" className={styles.nav_item}>
-            nav a
-          </button>
-          <button type="button" className={styles.nav_item}>
-            nav b
-          </button>
-          <button type="button" className={styles.nav_item}>
-            nav c
-          </button>
-          <button type="button" className={styles.nav_item}>
-            nav d
-          </button>
-        </div>
+        <Nav />
       </div>
     </div>
   );

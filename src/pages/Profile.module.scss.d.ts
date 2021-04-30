@@ -29,8 +29,6 @@ declare namespace ProfileModuleScssNamespace {
     init_btn: string;
     init_btn_ctrl: string;
     mix_navgrid: string;
-    nav: string;
-    nav_item: string;
     tab_item: string;
     tabs: string;
     titlebar: string;
