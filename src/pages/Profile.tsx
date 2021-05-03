@@ -66,16 +66,16 @@ const Profile: React.FC = () => {
       {/* tab */}
       <div className={styles.tabs}>
         <button type="button" className={styles.tab_item}>
-          tab a
+          Grid
         </button>
         <button type="button" className={styles.tab_item}>
-          tab b
+          List
         </button>
         <button type="button" className={styles.tab_item}>
-          tab c
+          Lacation
         </button>
         <button type="button" className={styles.tab_item}>
-          tab d
+          Save
         </button>
       </div>
 

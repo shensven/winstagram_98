@@ -1,20 +1,26 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import styles from './Nav.module.scss';
 
 const Nav = () => {
+  const history = useHistory();
   return (
     <div className={styles.nav}>
-      <button type="button" className={styles.nav_item}>
-        nav a
+      <button
+        type="button"
+        className={styles.nav_item}
+        onClick={() => history.push('/Feed')}
+      >
+        Feed
       </button>
       <button type="button" className={styles.nav_item}>
-        nav b
+        Search
       </button>
       <button type="button" className={styles.nav_item}>
-        nav c
+        Msg
       </button>
       <button type="button" className={styles.nav_item}>
-        nav d
+        Profile
       </button>
     </div>
   );
