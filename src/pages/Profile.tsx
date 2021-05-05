@@ -51,9 +51,9 @@ const Profile: React.FC = () => {
                 </span>
               </div>
               <div className={styles.edit_profile_wing}>
-                <button type="button" className={styles.edit_profile_btn}>
+                <Button className={styles.edit_profile_btn}>
                   Edit Profile
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -66,12 +66,10 @@ const Profile: React.FC = () => {
 
       {/* tab */}
       <div className={styles.tabs}>
-        <Button type="button" className={styles.tab_item}>
-          Grid
-        </Button>
-        <Button type="button">List</Button>
-        <Button type="button">Lacation</Button>
-        <Button type="button">Save</Button>
+        <Button className={styles.tab_item}>Grid</Button>
+        <Button className={styles.tab_item}>List</Button>
+        <Button className={styles.tab_item}>Lacation</Button>
+        <Button className={styles.tab_item}>Save</Button>
       </div>
 
       {/* nav & grid */}
@@ -90,6 +88,7 @@ const Profile: React.FC = () => {
           <div className={styles.img}>10</div>
           <div className={styles.img}>11</div>
         </div>
+
         {/* nav */}
         <Nav />
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router';
 import Button from './component/Button';
 import Window from './component/Window';
-import styles from './Feed.module.scss';
+// import styles from './Feed.module.scss';
 
 const Feed: React.FC = () => {
   const history = useHistory();
