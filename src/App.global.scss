@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'MS_Sans_Serif';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./pages/fonts/converted/ms_sans_serif.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'MS_Sans_Serif_Bold';
+  font-weight: bold;
+  font-style: normal;
+  src: url('./pages/fonts/converted/ms_sans_serif_bold.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  background: #02a6a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: none;
+  user-select: none;
+}

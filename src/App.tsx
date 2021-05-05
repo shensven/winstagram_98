@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
 import Feed from './pages/Feed';
 import Profile from './pages/Profile';
+import './App.global.scss';
 
 const App = () => {
   return (

@@ -1,16 +1,3 @@
-@font-face {
-  font-family: 'MS_Sans_Serif';
-  font-weight: normal;
-  font-style: normal;
-  src: url('./fonts/converted/ms_sans_serif.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'MS_Sans_Serif_Bold';
-  font-weight: bold;
-  font-style: normal;
-  src: url('./fonts/converted/ms_sans_serif_bold.woff2') format('woff2');
-}
-
 $global_shadow: (
   -0.5px -0.5px 0 0.5px #dfdfdf,
   0 0 0 1px #808080,
@@ -52,15 +39,6 @@ $global_shadow_active: (
   outline: 0;
 }
 
-// body
-body {
-  margin: 0;
-  background: #02a6a6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-font-smoothing: none;
-}
 .bg {
   background: #c0c0c0;
   height: calc(100vh - 14px);
