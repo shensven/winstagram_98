@@ -1,0 +1,26 @@
+@import './shadow.scss';
+
+// button
+.init_btn {
+  // display: flex;
+  border: none;
+  margin: 2px;
+  box-shadow: $global_shadow;
+  background: #c0c0c0;
+  font-family: 'MS_Sans_Serif';
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.init_btn:active {
+  box-shadow: $global_shadow_active;
+  padding-left: 7px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+.init_btn:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -2px;
+}

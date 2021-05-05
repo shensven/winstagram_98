@@ -1,19 +1,9 @@
-$global_shadow: (
-  -0.5px -0.5px 0 0.5px #dfdfdf,
-  0 0 0 1px #808080,
-  -0.5px -0.5px 0 1.5px #ffffff,
-  0 0 0 2px #0a0a0a
-);
-$global_shadow_active: (
-  -0.5px -0.5px 0 0.5px #808080,
-  0 0 0 1px #dfdfdf,
-  -0.5px -0.5px 0 1.5px #0a0a0a,
-  0 0 0 2px #ffffff
-);
+@import './component/shadow.scss';
 
 // button
 .init_btn {
   border: none;
+  width: calc(100% - 4px);
   height: 19px;
   box-shadow: $global_shadow;
   background: #c0c0c0;
@@ -31,6 +21,7 @@ $global_shadow_active: (
   outline: 1px dotted #000000;
   outline-offset: -2px;
 }
+
 // ctrl button
 .init_btn_ctrl:active {
   box-shadow: $global_shadow_active;
@@ -198,15 +189,13 @@ $global_shadow_active: (
   display: flex;
   flex-direction: row;
   justify-content: center;
+  // width: 100%;
   margin-top: 4px;
   padding-left: 1px;
   padding-right: 1px;
 }
 .tab_item {
-  @extend .init_btn;
   min-width: 84px;
-  margin-left: 2px;
-  margin-right: 2px;
 }
 
 // grid & nav

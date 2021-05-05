@@ -4,6 +4,7 @@ import styles from './Profile.module.scss';
 import title_help from './icons/help.svg';
 import logo from './icons/glyph-logo_May2016.svg';
 import avatar from './images/avatar.jpg';
+import Button from './component/Button';
 
 const Profile: React.FC = () => {
   return (
@@ -65,18 +66,12 @@ const Profile: React.FC = () => {
 
       {/* tab */}
       <div className={styles.tabs}>
-        <button type="button" className={styles.tab_item}>
+        <Button type="button" className={styles.tab_item}>
           Grid
-        </button>
-        <button type="button" className={styles.tab_item}>
-          List
-        </button>
-        <button type="button" className={styles.tab_item}>
-          Lacation
-        </button>
-        <button type="button" className={styles.tab_item}>
-          Save
-        </button>
+        </Button>
+        <Button type="button">List</Button>
+        <Button type="button">Lacation</Button>
+        <Button type="button">Save</Button>
       </div>
 
       {/* nav & grid */}

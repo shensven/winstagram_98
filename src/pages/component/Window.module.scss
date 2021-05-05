@@ -1,4 +1,4 @@
-@import './index.scss';
+@import './shadow.scss';
 
 .bg {
   background: #c0c0c0;
@@ -13,6 +13,7 @@
   background: linear-gradient(to right, #000080, #1084d0);
   margin-left: 1px;
   margin-right: 1px;
+  margin-bottom: 1px;
   padding-left: 2px;
   padding-right: 4.5px;
   padding-top: 1.5px;
@@ -40,23 +41,33 @@
   white-space: nowrap;
 }
 .titlebar_btn {
-  @extend .init_btn;
+  border: none;
   width: 11px;
   height: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #c0c0c0;
+  box-shadow: $global_shadow;
+  margin: 2px;
 }
 .titlebar_btn:active {
-  @extend .init_btn_ctrl:active;
+  width: calc(11px + 1px);
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  box-shadow: $global_shadow_active;
 }
 .titlebar_btn:focus {
-  @extend .init_btn_ctrl:focus;
+  outline: 0;
 }
 .titlebar_svg {
   width: 6px;
 }
 
 .children {
-  padding: 1px;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
 }

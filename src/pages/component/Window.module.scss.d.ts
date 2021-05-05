@@ -3,8 +3,6 @@ declare namespace WindowModuleScssNamespace {
     bg: string;
     children: string;
     first_margin_top: string;
-    init_btn: string;
-    init_btn_ctrl: string;
     titlebar: string;
     titlebar_btn: string;
     titlebar_svg: string;
