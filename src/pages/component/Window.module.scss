@@ -67,7 +67,7 @@
 }
 
 .children {
-  display: flex;
-  justify-content: flex-start;
-  align-self: flex-start;
+  width: calc(100% - 2px);
+  margin-left: 1px;
+  margin-right: 1px;
 }
