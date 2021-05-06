@@ -7,20 +7,15 @@ const Nav = () => {
   const history = useHistory();
   return (
     <div className={styles.nav}>
-      <Button
-        type="button"
-        className={styles.nav_item}
-        onClick={() => history.push('/Feed')}
-      >
+      <Button className={styles.nav_item} onClick={() => history.push('/Feed')}>
         Feed
       </Button>
-      <Button type="button" className={styles.nav_item}>
-        Search
-      </Button>
-      <Button type="button" className={styles.nav_item}>
-        Msg
-      </Button>
-      <Button type="button" className={styles.nav_item}>
+      <Button className={styles.nav_item}>Search</Button>
+      <Button className={styles.nav_item}>Msg</Button>
+      <Button
+        className={styles.nav_item}
+        onClick={() => history.push('/Profile')}
+      >
         Profile
       </Button>
     </div>

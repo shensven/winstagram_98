@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
-import Button from './component/Button';
 import Window from './component/Window';
+import Nav from './Nav';
 // import styles from './Feed.module.scss';
 
 const Feed: React.FC = () => {
@@ -9,8 +9,7 @@ const Feed: React.FC = () => {
   return (
     <div>
       <Window>
-        <Button onClick={() => history.push('/Profile')}>Profile</Button>
-        <Button>Test</Button>
+        <Nav />
       </Window>
     </div>
   );
