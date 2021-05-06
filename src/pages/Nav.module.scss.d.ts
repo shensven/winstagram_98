@@ -1,6 +1,5 @@
 declare namespace NavModuleScssNamespace {
   export interface INavModuleScss {
-    init_btn: string;
     nav: string;
     nav_item: string;
   }
