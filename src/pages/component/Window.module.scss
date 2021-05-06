@@ -4,6 +4,7 @@
   background: #c0c0c0;
   width: calc(100vw - 4px);
   margin-top: 2px;
+  padding-bottom: 1px;
   box-shadow: $global_shadow;
 }
 .first_margin_top {
@@ -13,7 +14,6 @@
   background: linear-gradient(to right, #000080, #1084d0);
   margin-left: 1px;
   margin-right: 1px;
-  margin-bottom: 1px;
   padding-left: 2px;
   padding-right: 4.5px;
   padding-top: 1.5px;
@@ -65,9 +65,9 @@
 .titlebar_svg {
   width: 6px;
 }
-
 .children {
   width: calc(100% - 2px);
   margin-left: 1px;
   margin-right: 1px;
+  margin-top: 1px;
 }

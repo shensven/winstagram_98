@@ -3,8 +3,8 @@ import styles from './Window.module.scss';
 import icon from '../icons/glyph-logo_May2016.svg';
 import title_help from '../icons/help.svg';
 
-const Window: React.FC = (props: any) => {
-  const { children } = props;
+const Window = (props: any) => {
+  const { children, className } = props;
   return (
     <div className={styles.bg}>
       <div className={styles.first_margin_top} />
@@ -17,7 +17,7 @@ const Window: React.FC = (props: any) => {
           <img alt="" src={title_help} className={styles.titlebar_svg} />
         </button>
       </div>
-      <div className={styles.children}>{children}</div>
+      <div className={`${styles.children} ${className}`}>{children}</div>
     </div>
   );
 };
