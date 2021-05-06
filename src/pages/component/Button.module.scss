@@ -1,6 +1,8 @@
 @import './shadow.scss';
 
-// button
+.root {
+  display: flex;
+}
 .init_btn {
   border: none;
   margin: 2px;

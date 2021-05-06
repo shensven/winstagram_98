@@ -1,6 +1,7 @@
 declare namespace ButtonModuleScssNamespace {
   export interface IButtonModuleScss {
     init_btn: string;
+    root: string;
   }
 }
 
