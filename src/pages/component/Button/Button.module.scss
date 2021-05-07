@@ -25,3 +25,24 @@
   outline: 1px dotted #000000;
   outline-offset: -2px;
 }
+.enabled_btn {
+  border: none;
+  margin: 2px;
+  box-shadow: $global_shadow_active;
+  background: #c0c0c0;
+  font-family: 'MS_Sans_Serif';
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.enabled_btn:active {
+  padding-left: 7px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+.enabled_btn:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -2px;
+}

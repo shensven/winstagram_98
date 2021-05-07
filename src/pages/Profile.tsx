@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router';
 import Nav from './Nav';
 import styles from './Profile.module.scss';
 import avatar from './images/avatar.jpg';
@@ -7,6 +8,8 @@ import Window from './component/Window/Window';
 import Divider from './component/Divider/Divider';
 
 const Profile: React.FC = () => {
+  const location = useLocation();
+
   return (
     <Window className={styles.root}>
       <div className={styles.username}>shensven</div>
@@ -60,7 +63,7 @@ const Profile: React.FC = () => {
         <div className={styles.img}>10</div>
         <div className={styles.img}>11</div>
       </div>
-      <Nav />
+      <Nav location={location.pathname} />
     </Window>
   );
 };

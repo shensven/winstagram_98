@@ -1,5 +1,9 @@
-.test {
-  background: red;
-  height: 2px;
-  width: 100%;
+.root {
+  height: calc(100vh - 39px);
+}
+.main {
+  height: calc(100vh - 38px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
