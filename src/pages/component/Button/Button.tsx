@@ -6,8 +6,6 @@ const Button = (props: any) => {
 
   const [btnType, setBtnType] = useState(styles.init_btn);
 
-  const timestamp = new Date().getTime().toString();
-
   useEffect(() => {
     switch (active) {
       case true:
@@ -16,7 +14,7 @@ const Button = (props: any) => {
       default:
         setBtnType(styles.init_btn);
     }
-  }, [timestamp]);
+  }, [active]);
 
   return (
     <button

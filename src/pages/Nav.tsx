@@ -15,8 +15,6 @@ const Nav = (props: any) => {
 
   const history = useHistory();
 
-  const timestamp = new Date().getTime().toString();
-
   useEffect(() => {
     switch (location) {
       case '/Feed':
@@ -28,7 +26,7 @@ const Nav = (props: any) => {
       default:
         break;
     }
-  }, [timestamp]);
+  }, [location]);
 
   return (
     <div className={styles.nav}>
