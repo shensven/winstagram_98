@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router';
 import Nav from './Nav';
 import styles from './Profile.module.scss';
