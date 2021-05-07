@@ -3,6 +3,8 @@
 .root {
   display: flex;
 }
+
+// default btn
 .init_btn {
   border: none;
   margin: 2px;
@@ -25,7 +27,9 @@
   outline: 1px dotted #000000;
   outline-offset: -2px;
 }
-.enabled_btn {
+
+// active btn
+.active_btn {
   border: none;
   margin: 2px;
   box-shadow: $global_shadow_active;
@@ -36,13 +40,13 @@
   padding-top: 1px;
   padding-bottom: 1px;
 }
-.enabled_btn:active {
+.active_btn:active {
   padding-left: 7px;
   padding-right: 5px;
   padding-top: 2px;
   padding-bottom: 0px;
 }
-.enabled_btn:focus {
+.active_btn:focus {
   outline: 1px dotted #000000;
   outline-offset: -2px;
 }

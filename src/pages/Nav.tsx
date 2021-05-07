@@ -34,22 +34,22 @@ const Nav = (props: any) => {
     <div className={styles.nav}>
       <Button
         className={styles.nav_item}
-        enabled={isActive.feed}
+        active={isActive.feed}
         onClick={() => {
           history.push('/Feed');
         }}
       >
         Feed
       </Button>
-      <Button enabled={false} className={styles.nav_item} onClick={() => {}}>
+      <Button className={styles.nav_item} active={false} onClick={() => {}}>
         Search
       </Button>
-      <Button enabled={false} className={styles.nav_item} onClick={() => {}}>
+      <Button className={styles.nav_item} active={false} onClick={() => {}}>
         Msg
       </Button>
       <Button
         className={styles.nav_item}
-        enabled={isActive.profile}
+        active={isActive.profile}
         onClick={() => {
           history.push('/Profile');
         }}

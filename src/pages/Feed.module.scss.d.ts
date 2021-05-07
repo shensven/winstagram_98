@@ -1,7 +1,7 @@
 declare namespace FeedModuleScssNamespace {
   export interface IFeedModuleScss {
-    main: string;
     root: string;
+    window: string;
   }
 }
 

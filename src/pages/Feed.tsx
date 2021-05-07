@@ -9,8 +9,8 @@ const Feed: React.FC = () => {
 
   return (
     <div>
-      <Window className={styles.root}>
-        <div className={styles.main}>
+      <Window className={styles.window}>
+        <div className={styles.root}>
           <div>Hola</div>
           <Nav location={location.pathname} />
         </div>
