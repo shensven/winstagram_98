@@ -1,4 +1,4 @@
-@import './shadow.scss';
+@import 'pages/component/shadow.scss';
 
 .bg {
   background: #c0c0c0;
@@ -22,6 +22,7 @@
   justify-content: space-between;
   align-items: center;
   height: 18px;
+  // display: none;
 }
 .titlebar_title {
   display: flex;

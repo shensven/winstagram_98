@@ -1,9 +1,9 @@
 import React from 'react';
 import { useHistory } from 'react-router';
-import Button from './component/Button';
+import Button from './component/Button/Button';
 import styles from './Nav.module.scss';
 
-const Nav = () => {
+const Nav: React.FC = () => {
   const history = useHistory();
   return (
     <div className={styles.nav}>

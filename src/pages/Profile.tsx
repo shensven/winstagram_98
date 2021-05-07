@@ -2,9 +2,9 @@ import React from 'react';
 import Nav from './Nav';
 import styles from './Profile.module.scss';
 import avatar from './images/avatar.jpg';
-import Button from './component/Button';
-import Window from './component/Window';
-import Divider from './component/Divider';
+import Button from './component/Button/Button';
+import Window from './component/Window/Window';
+import Divider from './component/Divider/Divider';
 
 const Profile: React.FC = () => {
   return (
@@ -44,7 +44,7 @@ const Profile: React.FC = () => {
       <div className={styles.tabs}>
         <Button className={styles.tab_item}>Grid</Button>
         <Button className={styles.tab_item}>List</Button>
-        <Button className={styles.tab_item}>Lacation</Button>
+        <Button className={styles.tab_item}>Location</Button>
         <Button className={styles.tab_item}>Save</Button>
       </div>
       <div className={styles.grid}>

@@ -5,7 +5,6 @@ const Button = (props: any) => {
   const { children, className, onClick } = props;
 
   return (
-    // <div className={styles.root}>
     <button
       type="button"
       className={`${styles.init_btn} ${className}`}
@@ -13,7 +12,6 @@ const Button = (props: any) => {
     >
       {children}
     </button>
-    // </div>
   );
 };
 

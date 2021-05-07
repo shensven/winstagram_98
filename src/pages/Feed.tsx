@@ -1,5 +1,5 @@
 import React from 'react';
-import Window from './component/Window';
+import Window from './component/Window/Window';
 import Nav from './Nav';
 // import styles from './Feed.module.scss';
 
