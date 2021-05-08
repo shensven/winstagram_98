@@ -45,7 +45,9 @@ const Profile: React.FC = () => {
       </div>
       <Divider />
       <div className={styles.tabs}>
-        <Button className={styles.tab_item}>Grid</Button>
+        <Button className={`${styles.tab_item} ${styles.tab_item_active}`}>
+          Grid
+        </Button>
         <Button className={styles.tab_item}>List</Button>
         <Button className={styles.tab_item}>Location</Button>
         <Button className={styles.tab_item}>Save</Button>

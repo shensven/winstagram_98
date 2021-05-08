@@ -21,6 +21,7 @@ declare namespace ProfileModuleScssNamespace {
     profile_info: string;
     root: string;
     tab_item: string;
+    tab_item_active: string;
     tabs: string;
     username: string;
   }

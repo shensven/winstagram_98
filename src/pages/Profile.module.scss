@@ -75,6 +75,17 @@
 .tab_item {
   width: 100%;
 }
+.tab_item_active {
+  border: none;
+  margin: 2px;
+  box-shadow: $global_shadow_active;
+  background: #c0c0c0;
+  font-family: 'MS_Sans_Serif';
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
 .grid {
   display: flex;
   flex: 1;
