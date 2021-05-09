@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router';
 import styles from './Profile.module.scss';
-import Nav from './Nav';
+import Nav from './components/Nav/Nav';
 import avatar from './images/avatar.jpg';
 import Button from './components/Button/Button';
 import Window from './components/Window/Window';

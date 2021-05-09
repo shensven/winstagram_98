@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Window from './components/Window/Window';
-import Nav from './Nav';
+import Nav from './components/Nav/Nav';
 import styles from './Search.module.scss';
 
 const Search: React.FC = () => {
