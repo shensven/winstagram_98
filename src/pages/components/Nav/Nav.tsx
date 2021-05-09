@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
-import Button from 'pages/components/Button/Button';
+import Button from '../Button/Button';
 import styles from './Nav.module.scss';
 
 const Nav = (props: any) => {
