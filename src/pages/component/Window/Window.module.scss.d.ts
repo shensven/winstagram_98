@@ -5,6 +5,7 @@ declare namespace WindowModuleScssNamespace {
     first_margin_top: string;
     titlebar: string;
     titlebar_btn: string;
+    titlebar_display: string;
     titlebar_svg: string;
     titlebar_title: string;
     titlebar_title_icon: string;

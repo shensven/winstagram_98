@@ -22,7 +22,9 @@
   justify-content: space-between;
   align-items: center;
   height: 18px;
-  // display: none;
+}
+.titlebar_display {
+  display: none;
 }
 .titlebar_title {
   display: flex;
