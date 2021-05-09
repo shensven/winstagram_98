@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router';
-import Nav from './Nav';
 import styles from './Profile.module.scss';
+import Nav from './Nav';
 import avatar from './images/avatar.jpg';
 import Button from './components/Button/Button';
 import Window from './components/Window/Window';
 import Divider from './components/Divider/Divider';
 import Grid from './containers/Grid';
+import List from './containers/List';
 
 const Profile: React.FC = () => {
   const location = useLocation();
+
+  const [tabIndex, setTabIndex] = useState(1);
+
+  useEffect(() => {});
 
   return (
     <Window className={styles.root}>
@@ -46,14 +51,59 @@ const Profile: React.FC = () => {
       </div>
       <Divider />
       <div className={styles.tabs}>
-        <Button className={`${styles.tab_item} ${styles.tab_item_active}`}>
+        <Button
+          className={`
+            ${styles.tab_item}
+            ${tabIndex === 1 ? styles.tab_item_active : null}`}
+          onClick={() => {
+            setTabIndex(1);
+          }}
+        >
           Grid
         </Button>
-        <Button className={styles.tab_item}>List</Button>
-        <Button className={styles.tab_item}>Location</Button>
-        <Button className={styles.tab_item}>Save</Button>
+        <Button
+          className={`
+            ${styles.tab_item}
+            ${tabIndex === 2 ? styles.tab_item_active : null}`}
+          onClick={() => {
+            setTabIndex(2);
+          }}
+        >
+          List
+        </Button>
+        <Button
+          className={`
+            ${styles.tab_item}
+            ${tabIndex === 3 ? styles.tab_item_active : null}`}
+          onClick={() => {
+            setTabIndex(3);
+          }}
+        >
+          Location
+        </Button>
+        <Button
+          className={`
+            ${styles.tab_item}
+            ${tabIndex === 4 ? styles.tab_item_active : null}`}
+          onClick={() => {
+            setTabIndex(4);
+          }}
+        >
+          Save
+        </Button>
       </div>
-      <Grid className={styles.grid} />
+      <Grid
+        className={`
+          ${styles.grid}
+          ${tabIndex === 1 ? null : styles.tab_item_display}
+        `}
+      />
+      <List
+        className={`
+          ${styles.list}
+          ${tabIndex === 2 ? null : styles.tab_item_display}
+        `}
+      />
       <Nav location={location.pathname} />
     </Window>
   );

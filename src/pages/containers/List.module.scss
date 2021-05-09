@@ -1,0 +1,31 @@
+@import 'pages/components/shadow.scss';
+
+.list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: flex-start;
+  // height: calc(100vh - 335px);
+  margin: 2px;
+  margin-top: 6px;
+  background: #dfdfdf;
+  box-shadow: $global_shadow_active;
+  overflow-y: scroll;
+}
+.img {
+  margin: 1px;
+  width: calc(100% - 2px);
+  height: 330px;
+  background: #02a6a6;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background-image: url('pages/icons/scrollbar-background.svg');
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+}

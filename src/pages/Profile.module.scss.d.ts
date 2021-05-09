@@ -17,10 +17,12 @@ declare namespace ProfileModuleScssNamespace {
     header_stats_posts_num: string;
     header_stats_posts_title: string;
     header_website: string;
+    list: string;
     profile_info: string;
     root: string;
     tab_item: string;
     tab_item_active: string;
+    tab_item_display: string;
     tabs: string;
     username: string;
   }
