@@ -17,7 +17,6 @@ declare namespace ProfileModuleScssNamespace {
     header_stats_posts_num: string;
     header_stats_posts_title: string;
     header_website: string;
-    img: string;
     profile_info: string;
     root: string;
     tab_item: string;

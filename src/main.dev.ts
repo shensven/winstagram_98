@@ -75,6 +75,7 @@ const createWindow = async () => {
     height: 776,
     minHeight: 520,
     fullscreenable: false,
+    // vibrancy: 'window',
     icon: getAssetPath('icon.png'),
     webPreferences: {
       nodeIntegration: true,

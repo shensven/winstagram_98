@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import Window from './component/Window/Window';
+import Window from './components/Window/Window';
 import Nav from './Nav';
 import styles from './Msg.module.scss';
 

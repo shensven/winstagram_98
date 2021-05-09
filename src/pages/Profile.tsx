@@ -3,9 +3,10 @@ import { useLocation } from 'react-router';
 import Nav from './Nav';
 import styles from './Profile.module.scss';
 import avatar from './images/avatar.jpg';
-import Button from './component/Button/Button';
-import Window from './component/Window/Window';
-import Divider from './component/Divider/Divider';
+import Button from './components/Button/Button';
+import Window from './components/Window/Window';
+import Divider from './components/Divider/Divider';
+import Grid from './containers/Grid';
 
 const Profile: React.FC = () => {
   const location = useLocation();
@@ -52,19 +53,7 @@ const Profile: React.FC = () => {
         <Button className={styles.tab_item}>Location</Button>
         <Button className={styles.tab_item}>Save</Button>
       </div>
-      <div className={styles.grid}>
-        <div className={styles.img}>1</div>
-        <div className={styles.img}>2</div>
-        <div className={styles.img}>3</div>
-        <div className={styles.img}>4</div>
-        <div className={styles.img}>5</div>
-        <div className={styles.img}>6</div>
-        <div className={styles.img}>7</div>
-        <div className={styles.img}>8</div>
-        <div className={styles.img}>9</div>
-        <div className={styles.img}>10</div>
-        <div className={styles.img}>11</div>
-      </div>
+      <Grid className={styles.grid} />
       <Nav location={location.pathname} />
     </Window>
   );

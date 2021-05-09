@@ -1,4 +1,4 @@
-@import './component/shadow.scss';
+@import './components/shadow.scss';
 
 .root {
   height: calc(100vh - 39px); // macOS Window Border Radius
@@ -87,32 +87,5 @@
   padding-bottom: 1px;
 }
 .grid {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
   height: calc(100vh - 335px);
-  margin: 2px;
-  margin-top: 6px;
-  background: #dfdfdf;
-  box-shadow: $global_shadow_active;
-  overflow-y: scroll;
-}
-.img {
-  margin: 1px;
-  width: calc(33.3% - 2px);
-  height: 109px;
-  background: #02a6a6;
-  display: flex;
-}
-
-::-webkit-scrollbar {
-  width: 16px;
-}
-::-webkit-scrollbar-track {
-  background-image: url('./icons/scrollbar-background.svg');
-}
-::-webkit-scrollbar-thumb {
-  background-color: #c0c0c0;
 }
