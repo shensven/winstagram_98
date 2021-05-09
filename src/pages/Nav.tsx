@@ -20,6 +20,12 @@ const Nav = (props: any) => {
       case '/Feed':
         setIsActive({ ...isActive, feed: true });
         break;
+      case '/Search':
+        setIsActive({ ...isActive, search: true });
+        break;
+      case '/Msg':
+        setIsActive({ ...isActive, msg: true });
+        break;
       case '/Profile':
         setIsActive({ ...isActive, profile: true });
         break;
@@ -39,10 +45,22 @@ const Nav = (props: any) => {
       >
         Feed
       </Button>
-      <Button className={styles.nav_item} active={false} onClick={() => {}}>
+      <Button
+        className={styles.nav_item}
+        active={isActive.search}
+        onClick={() => {
+          history.push('./Search');
+        }}
+      >
         Search
       </Button>
-      <Button className={styles.nav_item} active={false} onClick={() => {}}>
+      <Button
+        className={styles.nav_item}
+        active={isActive.msg}
+        onClick={() => {
+          history.push('./Msg');
+        }}
+      >
         Msg
       </Button>
       <Button

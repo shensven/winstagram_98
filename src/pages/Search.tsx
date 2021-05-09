@@ -2,16 +2,16 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Window from './component/Window/Window';
 import Nav from './Nav';
-import styles from './Feed.module.scss';
+import styles from './Search.module.scss';
 
-const Feed: React.FC = () => {
+const Search: React.FC = () => {
   const location = useLocation();
 
   return (
     <div>
       <Window className={styles.window}>
         <div className={styles.root}>
-          <div>Hola Feed</div>
+          <div>Hola Search</div>
           <Nav location={location.pathname} />
         </div>
       </Window>
@@ -19,4 +19,4 @@ const Feed: React.FC = () => {
   );
 };
 
-export default Feed;
+export default Search;
