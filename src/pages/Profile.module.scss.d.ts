@@ -18,11 +18,13 @@ declare namespace ProfileModuleScssNamespace {
     header_stats_posts_title: string;
     header_website: string;
     list: string;
+    location: string;
     profile_info: string;
     root: string;
+    save: string;
     tab_item: string;
     tab_item_active: string;
-    tab_item_display: string;
+    tab_item_display_none: string;
     tabs: string;
     username: string;
   }

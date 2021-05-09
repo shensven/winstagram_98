@@ -3,6 +3,9 @@
 
 .root {
   height: calc(100vh - 39px); // macOS Window Border Radius
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .username {
   width: 100%;
@@ -87,11 +90,14 @@
   padding-top: 1px;
   padding-bottom: 1px;
 }
-.tab_item_display {
-  display: none;
+.tab_item_display_none {
+  display: none !important;
 }
 
+// container
 .grid,
-.list {
-  height: calc(100vh - 335px);
+.list,
+.location,
+.save {
+  height: calc(100vh - 337px);
 }

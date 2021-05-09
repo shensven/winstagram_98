@@ -1,6 +1,6 @@
 @import 'pages/components/shadow.scss';
 
-.list {
+.save {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -9,12 +9,4 @@
   margin-top: 6px;
   background: #dfdfdf;
   box-shadow: $global_shadow_active;
-  overflow-y: scroll;
-}
-.img {
-  margin: 1px;
-  width: calc(100% - 2px);
-  height: 330px;
-  background: #02a6a6;
-  display: flex;
 }
