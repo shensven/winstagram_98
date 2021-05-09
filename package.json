@@ -1,7 +1,7 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Fast Refresh for rapid application development",
+  "name": "winstagram_98",
+  "productName": "Winstgram 1998 Edition",
+  "description": "An Instagram desktop dreamed back to 1998",
   "scripts": {
     "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
     "build:main": "cross-env NODE_ENV=production webpack --config ./.erb/configs/webpack.config.main.prod.babel.js",
@@ -30,8 +30,8 @@
     ]
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.erb.ElectronReact",
+    "productName": "Winstgram 1998 Edition",
+    "appId": "org.erb.Winstgram98",
     "files": [
       "dist/",
       "node_modules/",
@@ -294,5 +294,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "version": "0.0.1"
 }
