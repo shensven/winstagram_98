@@ -1,7 +1,17 @@
 declare namespace ListModuleScssNamespace {
   export interface IListModuleScss {
-    img: string;
-    list: string;
+    contrbution: string;
+    contrbution_btn: string;
+    contrbution_btn_group: string;
+    contrbution_caption: string;
+    contrbution_caption_comment: string;
+    contrbution_caption_likes: string;
+    header: string;
+    header_img: string;
+    header_username: string;
+    photo: string;
+    post: string;
+    root: string;
   }
 }
 

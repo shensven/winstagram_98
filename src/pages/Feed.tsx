@@ -4,7 +4,6 @@ import Window from './components/Window/Window';
 import Nav from './components/Nav/Nav';
 import styles from './Feed.module.scss';
 import logo from './images/logo.svg';
-import Divider from './components/Divider/Divider';
 import List from './containers/List';
 
 const Feed: React.FC = () => {
