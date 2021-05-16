@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 import Button from '../Button/Button';
 import styles from './Nav.module.scss';
+import feedImg from '../../icons/shell32/nav_feed.png';
+import searchImg from '../../icons/shell32/nav_search.png';
+import msgImg from '../../icons/shell32/nav_msg.png';
+import profileImg from '../../icons/shell32/nav_profile.png';
 
 const Nav = (props: any) => {
   const { location } = props;
@@ -43,7 +47,7 @@ const Nav = (props: any) => {
           history.push('/Feed');
         }}
       >
-        Feed
+        <img alt="" src={feedImg} className={styles.icon_feed} />
       </Button>
       <Button
         className={styles.nav_item}
@@ -52,7 +56,7 @@ const Nav = (props: any) => {
           history.push('./Search');
         }}
       >
-        Search
+        <img alt="" src={searchImg} className={styles.icon_search} />
       </Button>
       <Button
         className={styles.nav_item}
@@ -61,7 +65,7 @@ const Nav = (props: any) => {
           history.push('./Msg');
         }}
       >
-        Msg
+        <img alt="" src={msgImg} className={styles.icon_msg} />
       </Button>
       <Button
         className={styles.nav_item}
@@ -70,7 +74,7 @@ const Nav = (props: any) => {
           history.push('/Profile');
         }}
       >
-        Profile
+        <img alt="" src={profileImg} className={styles.icon_profile} />
       </Button>
     </div>
   );

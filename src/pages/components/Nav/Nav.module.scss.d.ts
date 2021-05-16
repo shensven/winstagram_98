@@ -1,5 +1,9 @@
 declare namespace NavModuleScssNamespace {
   export interface INavModuleScss {
+    icon_feed: string;
+    icon_msg: string;
+    icon_profile: string;
+    icon_search: string;
     nav: string;
     nav_item: string;
   }

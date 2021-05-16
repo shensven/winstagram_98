@@ -10,6 +10,10 @@ import Grid from './containers/Grid';
 import List from './containers/List';
 import Location from './containers/Location';
 import Save from './containers/Save';
+import gridImg from './icons/shell32/tab_grid.png';
+import listImg from './icons/shell32/tab_list.png';
+import locationImg from './icons/shell32/tab_location.png';
+import saveImg from './icons/shell32/tab_save.png';
 
 const Profile: React.FC = () => {
   const location = useLocation();
@@ -60,37 +64,37 @@ const Profile: React.FC = () => {
               setTabIndex(1);
             }}
           >
-            Grid
+            <img alt="" src={gridImg} className={styles.tab_item_icon} />
           </Button>
           <Button
             className={`
-              ${styles.tab_item}
-              ${tabIndex === 2 ? styles.tab_item_active : null}`}
+            ${styles.tab_item}
+            ${tabIndex === 2 ? styles.tab_item_active : null}`}
             onClick={() => {
               setTabIndex(2);
             }}
           >
-            List
+            <img alt="" src={listImg} className={styles.tab_item_icon} />
           </Button>
           <Button
             className={`
-              ${styles.tab_item}
-              ${tabIndex === 3 ? styles.tab_item_active : null}`}
+            ${styles.tab_item}
+            ${tabIndex === 3 ? styles.tab_item_active : null}`}
             onClick={() => {
               setTabIndex(3);
             }}
           >
-            Location
+            <img alt="" src={locationImg} className={styles.tab_item_icon} />
           </Button>
           <Button
             className={`
-              ${styles.tab_item}
-              ${tabIndex === 4 ? styles.tab_item_active : null}`}
+            ${styles.tab_item}
+            ${tabIndex === 4 ? styles.tab_item_active : null}`}
             onClick={() => {
               setTabIndex(4);
             }}
           >
-            Save
+            <img alt="" src={saveImg} className={styles.tab_item_icon} />
           </Button>
         </div>
         <Grid
