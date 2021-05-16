@@ -9,6 +9,7 @@ declare namespace ListModuleScssNamespace {
     header: string;
     header_img: string;
     header_username: string;
+    icon: string;
     photo: string;
     post: string;
     root: string;
