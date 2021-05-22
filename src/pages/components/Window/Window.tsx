@@ -5,7 +5,7 @@ import styles from './Window.module.scss';
 
 const Window = (props: any) => {
   const { children, className } = props;
-  const [hasTitlebar] = useState(true);
+  const [hasTitlebar] = useState(false);
 
   return (
     <div className={styles.bg}>
