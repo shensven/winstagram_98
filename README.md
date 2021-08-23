@@ -11,6 +11,7 @@ An Instagram desktop dreamed back to 1998
 
 ## Preview
 
-| ![Screenshot 1](assets/screenshot/Xnip2021-08-22_22-51-38.png) | ![Screenshot 1](assets/screenshot/Xnip2021-08-22_22-51-43.png) | ![Screenshot 1](assets/screenshot/Xnip2021-08-22_22-51-48.png) |
-| :------------------------------------------------------------: | :------------------------------------------------------------: | :------------------------------------------------------------: |
+![Screenshot 1](assets/screenshot/screenshot-0.png)
 
+| ![Screenshot 1](assets/screenshot/screenshot-1.png) | ![Screenshot 1](assets/screenshot/screenshot-2.png) | ![Screenshot 1](assets/screenshot/screenshot-3.png) |
+| :-------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------: |
