@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 import Window from './components/Window/Window';
 import Nav from './components/Nav/Nav';
 import styles from './Feed.module.scss';
@@ -9,7 +9,7 @@ import List from './containers/List';
 
 const Feed: React.FC = () => {
   const location = useLocation();
-  const [timestamp] = useState(new Date().getTime().toString());
+  // const [timestamp] = useState(new Date().getTime().toString());
 
   // useEffect(() => {
   //   axios
