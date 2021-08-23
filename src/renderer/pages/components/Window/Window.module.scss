@@ -1,0 +1,75 @@
+@import '../../components/shadow.scss';
+.bg {
+  background: #c0c0c0;
+  width: calc(100vw - 4px);
+  margin-top: 2px;
+  padding-bottom: 1px;
+  box-shadow: $global_shadow;
+}
+.first_margin_top {
+  height: 1px;
+}
+.titlebar {
+  background: linear-gradient(to right, #000080, #1084d0);
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-left: 2px;
+  padding-right: 4.5px;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18px;
+}
+.titlebar_display {
+  display: none;
+}
+.titlebar_title {
+  display: flex;
+  align-items: center;
+  font-family: 'MS_Sans_Serif_Bold';
+  font-size: 11px;
+  color: #ffffff;
+}
+.titlebar_title_icon {
+  padding-left: 1px;
+  padding-right: 1px;
+  width: 15px;
+}
+.titlebar_title_typo {
+  padding-left: 1px;
+  padding-right: 1px;
+  white-space: nowrap;
+}
+.titlebar_btn {
+  border: none;
+  width: 11px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c0c0c0;
+  box-shadow: $global_shadow;
+  margin: 2px;
+}
+.titlebar_btn:active {
+  width: calc(11px + 1px);
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  box-shadow: $global_shadow_active;
+}
+.titlebar_btn:focus {
+  outline: 0;
+}
+.titlebar_svg {
+  width: 6px;
+}
+.children {
+  width: calc(100% - 2px);
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 1px;
+}

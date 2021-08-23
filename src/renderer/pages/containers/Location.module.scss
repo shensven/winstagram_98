@@ -1,0 +1,12 @@
+@import '../components/shadow.scss';
+
+.location {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 2px;
+  margin-top: 6px;
+  background: #dfdfdf;
+  box-shadow: $global_shadow_active;
+}

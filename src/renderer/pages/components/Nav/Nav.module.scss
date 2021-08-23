@@ -1,0 +1,29 @@
+@import '../../components/shadow.scss';
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 1px;
+}
+.nav_item {
+  width: 100%;
+  height: 17px;
+}
+.icon_feed {
+  width: 16px;
+  margin-top: -1px;
+}
+.icon_search {
+  width: 16px;
+  margin-top: -1px;
+}
+.icon_msg {
+  width: 16px;
+  margin-top: -1px;
+}
+.icon_profile {
+  width: 19px;
+  margin-top: -2px;
+}
