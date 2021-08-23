@@ -1,5 +1,6 @@
 # Winstagram 98
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0f479f809f624ee7a750824c50824d72)](https://app.codacy.com/gh/shensven/winstagram_98?utm_source=github.com&utm_medium=referral&utm_content=shensven/winstagram_98&utm_campaign=Badge_Grade_Settings)
 [![GitHub](https://img.shields.io/github/license/shensven/winstagram_98)](./LICENSE)
 [![](https://img.shields.io/github/package-json/dependency-version/shensven/winstagram_98/dev/electron)](./package.json)
 [![](https://img.shields.io/github/package-json/dependency-version/shensven/winstagram_98/react)](./package.json)
