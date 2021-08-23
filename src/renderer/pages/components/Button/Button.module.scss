@@ -16,6 +16,7 @@
   padding-top: 1px;
   padding-bottom: 1px;
 }
+
 .init_btn:active {
   box-shadow: $global_shadow_active;
   padding-left: 7px;
@@ -23,6 +24,7 @@
   padding-top: 2px;
   padding-bottom: 0px;
 }
+
 .init_btn:focus {
   outline: 1px dotted #000000;
   outline-offset: -2px;
@@ -40,12 +42,14 @@
   padding-top: 1px;
   padding-bottom: 1px;
 }
+
 .active_btn:active {
   padding-left: 7px;
   padding-right: 5px;
   padding-top: 2px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
+
 .active_btn:focus {
   outline: 1px dotted #000000;
   outline-offset: -2px;
