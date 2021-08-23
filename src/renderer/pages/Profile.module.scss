@@ -2,7 +2,7 @@
 @import './components/scrollbar.scss';
 
 .root {
-  height: calc(100vh - 39px); // macOS Window Border Radius
+  height: calc(100vh - 7px); // macOS Window Border Radius
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   font-family: 'MS_Sans_Serif_Bold';
+  -webkit-app-region: drag;
 }
 .header_base_info {
   display: flex;
@@ -103,5 +104,5 @@
 .list,
 .location,
 .save {
-  height: calc(100vh - 337px);
+  height: calc(100vh - 306px);
 }
