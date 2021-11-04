@@ -46,7 +46,13 @@ const Profile: React.FC = () => {
                 </div>
               </div>
             </div>
-            <Button className={styles.header_btn}>Edit Profile</Button>
+            <Button
+              active={false}
+              className={styles.header_btn}
+              onClick={() => {}}
+            >
+              Edit Profile
+            </Button>
           </div>
         </div>
         <div className={styles.profile_info}>
@@ -57,6 +63,7 @@ const Profile: React.FC = () => {
         <Divider />
         <div className={styles.tabs}>
           <Button
+            active={false}
             className={`
               ${styles.tab_item}
               ${tabIndex === 1 ? styles.tab_item_active : null}`}
@@ -67,6 +74,7 @@ const Profile: React.FC = () => {
             <img alt="" src={gridImg} className={styles.tab_item_icon} />
           </Button>
           <Button
+            active={false}
             className={`
             ${styles.tab_item}
             ${tabIndex === 2 ? styles.tab_item_active : null}`}
@@ -77,6 +85,7 @@ const Profile: React.FC = () => {
             <img alt="" src={listImg} className={styles.tab_item_icon} />
           </Button>
           <Button
+            active={false}
             className={`
             ${styles.tab_item}
             ${tabIndex === 3 ? styles.tab_item_active : null}`}
@@ -87,6 +96,7 @@ const Profile: React.FC = () => {
             <img alt="" src={locationImg} className={styles.tab_item_icon} />
           </Button>
           <Button
+            active={false}
             className={`
             ${styles.tab_item}
             ${tabIndex === 4 ? styles.tab_item_active : null}`}

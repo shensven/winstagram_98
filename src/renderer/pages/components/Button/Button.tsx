@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Button.module.scss';
 
-const Button = (props: any) => {
+interface Props {
+  children: React.ReactNode;
+  className: string;
+  onClick: () => void;
+  active: boolean;
+}
+
+const Button: React.FC<Props> = (props) => {
   const { children, className, onClick, active } = props;
 
   const [btnType, setBtnType] = useState(styles.init_btn);

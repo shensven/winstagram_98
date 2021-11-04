@@ -1,7 +1,11 @@
 import React from 'react';
 import styles from './Save.module.scss';
 
-const Save = (props: any) => {
+interface Props {
+  className: string;
+}
+
+const Save: React.FC<Props> = (props) => {
   const { className } = props;
   return (
     <div className={`${styles.save} ${className}`}>

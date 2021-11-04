@@ -6,7 +6,7 @@ import Msg from './pages/Msg';
 import Profile from './pages/Profile';
 import './App.global.scss';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Router>
       <Route path="/">

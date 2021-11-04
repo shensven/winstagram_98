@@ -1,7 +1,11 @@
 import React from 'react';
 import styles from './Location.module.scss';
 
-const Location = (props: any) => {
+interface Props {
+  className: string;
+}
+
+const Location: React.FC<Props> = (props) => {
   const { className } = props;
 
   return (

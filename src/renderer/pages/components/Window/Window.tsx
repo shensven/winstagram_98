@@ -3,7 +3,12 @@ import icon from '../../icons/glyph-logo_May2016.svg';
 import title_help from '../../icons/help.svg';
 import styles from './Window.module.scss';
 
-const Window = (props: any) => {
+interface Props {
+  children: React.ReactNode;
+  className: string;
+}
+
+const Window: React.FC<Props> = (props) => {
   const { children, className } = props;
   const [hasTitlebar] = useState(false);
 

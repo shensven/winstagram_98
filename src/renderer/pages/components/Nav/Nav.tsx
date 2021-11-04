@@ -7,7 +7,11 @@ import searchImg from '../../icons/shell32/nav_search.png';
 import msgImg from '../../icons/shell32/nav_msg.png';
 import profileImg from '../../icons/shell32/nav_profile.png';
 
-const Nav = (props: any) => {
+interface NavProps {
+  location: string;
+}
+
+const Nav: React.FC<NavProps> = (props) => {
   const { location } = props;
 
   const [isActive, setIsActive] = useState({

@@ -6,12 +6,16 @@ import likeImg from '../icons/shell32/list_like.png';
 import commentImg from '../icons/shell32/list_comment.png';
 import shareImg from '../icons/shell32/list_share.png';
 
-const List = (props: any) => {
+interface Props {
+  className: string;
+}
+
+const List: React.FC<Props> = (props) => {
   const { className } = props;
   const feedArr = [12, 13, 14];
   return (
     <div className={`${styles.root} ${className}`}>
-      {feedArr.map((index: number, item: any) => (
+      {feedArr.map((index: number, item: number) => (
         <div className={styles.post} key={index}>
           <div className={styles.header}>
             <img alt="" src={avatar} className={styles.header_img} />
@@ -20,13 +24,25 @@ const List = (props: any) => {
           <div className={styles.photo}>{feedArr[item]}</div>
           <div className={styles.contrbution}>
             <div className={styles.contrbution_btn_group}>
-              <Button className={styles.contrbution_btn}>
+              <Button
+                active={false}
+                className={styles.contrbution_btn}
+                onClick={() => {}}
+              >
                 <img alt="" src={likeImg} className={styles.icon} />
               </Button>
-              <Button className={styles.contrbution_btn}>
+              <Button
+                active={false}
+                className={styles.contrbution_btn}
+                onClick={() => {}}
+              >
                 <img alt="" src={commentImg} className={styles.icon} />
               </Button>
-              <Button className={styles.contrbution_btn}>
+              <Button
+                active={false}
+                className={styles.contrbution_btn}
+                onClick={() => {}}
+              >
                 <img alt="" src={shareImg} className={styles.icon} />
               </Button>
             </div>
